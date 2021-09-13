@@ -5,6 +5,6 @@ import { Component } from "@angular/core";
     templateUrl: 'layout.component.html',
     styleUrls: ['layout.component.css']
 })
-export class TopNavBarComponent {
+export class LayOutComponent {
 
 }

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CarouselsComponent } from './Carousels/carousels.component';
 import { FootComponent } from './footers/foot.component';
 import { TopNavBarComponent } from './headers/top-nav-bar.component';
+import { LayOutComponent } from './layout/layout.component';
 import { SideBarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SideBarComponent } from './sidebar/sidebar.component';
     TopNavBarComponent,
     FootComponent,
     CarouselsComponent,
-    SideBarComponent
+    SideBarComponent,
+    LayOutComponent
   ],
   imports: [
     BrowserModule
