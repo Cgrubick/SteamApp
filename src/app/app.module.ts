@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CarouselsComponent } from './Carousels/carousels.component';
 import { FootComponent } from './footers/foot.component';
 import { TopNavBarComponent } from './headers/top-nav-bar.component';
+import { SideBarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
     FootComponent,
-    CarouselsComponent
+    CarouselsComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule
