@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CarouselsComponent } from './Carousels/carousels.component';
 import { FootComponent } from './footers/foot.component';
+import { GutterComponent } from './gutters/gutter.component';
 import { TopNavBarComponent } from './headers/top-nav-bar.component';
 import { LayOutComponent } from './layout/layout.component';
 import { SideBarComponent } from './sidebar/sidebar.component';
@@ -15,7 +16,8 @@ import { SideBarComponent } from './sidebar/sidebar.component';
     FootComponent,
     CarouselsComponent,
     SideBarComponent,
-    LayOutComponent
+    LayOutComponent,
+    GutterComponent
   ],
   imports: [
     BrowserModule
