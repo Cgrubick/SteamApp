@@ -31,5 +31,13 @@
       background-color: transparent;
       text-decoration: none;
     }
+    body{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+  article {
+      margin: auto 0;
+  }
     
 
