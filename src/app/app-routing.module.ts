@@ -11,7 +11,8 @@ const routes: Routes = [
   {path: 'steam-support', component: SupportComponent},
   {path: 'steam-about', component: AboutComponent},
   {path: 'steam-login', component: LoginComponent},
-  {path: 'steam-community', component: CommunityComponent}
+  {path: 'steam-community', component: CommunityComponent},
+  {path: 'Steam-Home', redirectTo: 'Steam-Home'}
 ];
 
 
