@@ -13,6 +13,8 @@ import { CommunityComponent } from './body/community/community.component';
 import { AboutComponent } from './body/about/about.component';
 import { SupportComponent } from './body/support/support.component';
 import { LoginComponent } from './body/login/login.component';
+import { SaleCardsComponent } from './sale-cards/sale-cards.component';
+
 
 
 
@@ -30,7 +32,8 @@ import { LoginComponent } from './body/login/login.component';
     CommunityComponent,
     AboutComponent,
     SupportComponent,
-    LoginComponent
+    LoginComponent,
+    SaleCardsComponent
   ],
   imports: [
     BrowserModule,
