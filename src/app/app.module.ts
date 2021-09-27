@@ -14,6 +14,7 @@ import { AboutComponent } from './body/about/about.component';
 import { SupportComponent } from './body/support/support.component';
 import { LoginComponent } from './body/login/login.component';
 import { SaleCardsComponent } from './sale-cards/sale-cards.component';
+import { StreamCardsComponent } from './stream-cards/stream-cards.component';
 
 
 
@@ -33,7 +34,8 @@ import { SaleCardsComponent } from './sale-cards/sale-cards.component';
     AboutComponent,
     SupportComponent,
     LoginComponent,
-    SaleCardsComponent
+    SaleCardsComponent,
+    StreamCardsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,30 @@
 <app-search-nav>Loading</app-search-nav>
 
-<div style="color:white" >FEATURED & RECOMMENDED</div>
+<div style="color:white">FEATURED & RECOMMENDED</div>
 <app-carousels>Loading</app-carousels>
 <div style="color:white">SPECIAL OFFERS</div>
-<app-sale-cards>Loading</app-sale-cards>
+
+<div style="color:white">GAMES STREAMING NOW</div>
+<div class="container-fluid">
+        <div class="d-flex flex-row">
+                <div *ngFor="let stream of streams;">
+                        <app-stream-cards viewerCount={{stream.viewerCount}} imagePaths={{stream.imagePaths}} streamTitle={{stream.streamTitle}}>Loading</app-stream-cards>
+                </div>
+        </div>
+       
+</div>
+
+
+
+
+
+
+<div style="color:white">UPDATES AND OFFERS</div>
+
+<div class="container-fluid">
+        <div class="d-flex flex-row">
+                <div *ngFor="let sale of sales;">
+                        <app-sale-cards price={{sale.price}} imagePath={{sale.imagePath}}>Loading</app-sale-cards>
+                </div>
+        </div>
+</div>
