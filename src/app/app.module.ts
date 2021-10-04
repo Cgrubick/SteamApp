@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { CarouselsComponent } from './Carousels/carousels.component';
 import { FootComponent } from './footers/foot.component';
@@ -15,6 +16,8 @@ import { SupportComponent } from './body/support/support.component';
 import { LoginComponent } from './body/login/login.component';
 import { SaleCardsComponent } from './sale-cards/sale-cards.component';
 import { StreamCardsComponent } from './stream-cards/stream-cards.component';
+import { HttpClientModule } from "@angular/common/http";
+import { UserInfoComponent } from './headers/user-info.component';
 
 
 
@@ -35,11 +38,13 @@ import { StreamCardsComponent } from './stream-cards/stream-cards.component';
     SupportComponent,
     LoginComponent,
     SaleCardsComponent,
-    StreamCardsComponent
+    StreamCardsComponent, 
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
