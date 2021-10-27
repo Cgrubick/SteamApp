@@ -1,10 +1,15 @@
-<div class="card text-center m-2 p-2">
-    <div class="card-body text-right">
-        
-        <img src={{imagePath}} class="card-img-top" >
+<p *ngIf="mySale == undefined">Failed Fetching user info</p>
+<div *ngIf="mySale != undefined">
+    
+    <div class="card text-center m-2 p-2">
+        <div class="card-body text-right">
 
-    </div>
-    <div class="card-footer text-muted">
-        {{price}}
+            <img src={{mySale.imagePath}} class="card-img-top">
+
+        </div>
+        <div class="card-footer text-muted">
+            
+            {{mySale.price}}
+        </div>
     </div>
 </div>

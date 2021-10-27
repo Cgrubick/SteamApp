@@ -3,7 +3,7 @@ import { UserInfo } from "./user-info.model";
 import { UserInfoService } from "./user-info.service";
 
 
-@Injectable()
+
 @Component({
     selector: 'app-user-info',
     templateUrl: 'user-info.component.html'
@@ -17,6 +17,7 @@ export class UserInfoComponent implements OnInit{
     ngOnInit(): void {
         console.log("Registering showUserInfo as a subscriber");
         this.showUserInfo();
+        
     }
     
     showUserInfo(){

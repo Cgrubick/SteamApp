@@ -18,6 +18,8 @@ import { SaleCardsComponent } from './sale-cards/sale-cards.component';
 import { StreamCardsComponent } from './stream-cards/stream-cards.component';
 import { HttpClientModule } from "@angular/common/http";
 import { UserInfoComponent } from './headers/user-info.component';
+import { AccountCreationComponent } from './body/account-creation/account-creation.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -39,12 +41,14 @@ import { UserInfoComponent } from './headers/user-info.component';
     LoginComponent,
     SaleCardsComponent,
     StreamCardsComponent, 
-    UserInfoComponent
+    UserInfoComponent,
+    AccountCreationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

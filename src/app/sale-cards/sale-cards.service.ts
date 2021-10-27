@@ -1,16 +1,18 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { UserInfo } from "./user-info.model";
+import { SaleCards } from "./sale.model";
+
 
 @Injectable({providedIn:'root'})
-export class UserInfoService{
-    private baseUrl:string = 'https://steam-app-ee6c0-default-rtdb.firebaseio.com/';
-    private myInfoEndpoint:string = 'my-info.json';
+export class SaleCardsService{
+    private baseUrl:string = 'https://steam-app-ee6c0-default-rtdb.firebaseio.com/Sales/';
+    private myInfoEndpoint:string = 'Mock-Sale.json';
+    
     constructor(private http: HttpClient){
 
     }
 
-    getUserInfo(){
-        return this.http.get<UserInfo>(this.baseUrl + this.myInfoEndpoint);
+    getSaleCards(){
+        return this.http.get<SaleCards []>(this.baseUrl + this.myInfoEndpoint);
     }
 }

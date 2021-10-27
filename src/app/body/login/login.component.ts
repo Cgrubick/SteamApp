@@ -1,14 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { UserInfo } from 'src/app/headers/user-info.model';
+import { UserInfoService } from 'src/app/headers/user-info.service';
 
 @Component({
-  selector: 'steam-login',
+  selector: 'app-login',
   templateUrl: './login.component.html',
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
+  constructor(private infoService: UserInfoService) { }
 
-  ngOnInit(): void {
+  onEditUserInfo(data: UserInfo) {
+    
+    
+    this.infoService.modifyUserInfo(data).subscribe(data =>{
+      console.log("Data uploaded!");
+      console.log(data);
+      
+    });
   }
 
 }
