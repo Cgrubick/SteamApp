@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "steam-app-ee6c0": {
+      "hosting": {
+        "Steam": [
+          "steam-app-ee6c0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "steam-app-ee6c0"
+  }
+}
