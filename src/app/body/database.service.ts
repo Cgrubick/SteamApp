@@ -14,7 +14,7 @@ export class DataBaseService{
     }
 
     public showData(){
-        this.items.subscribe((data: UserInfo []) => {
+        this.items.subscribe((data) => {
         console.log("Data recieved");
         for(let item of data){
             console.log(item);
