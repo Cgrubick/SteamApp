@@ -22,7 +22,7 @@ export class UserInfoComponent implements OnInit{
     
     showUserInfo(){
         this.userInfoService.getUserInfo().subscribe((data: UserInfo) => {
-            console.log(data);
+            
             this.myInfo = data;
         })
     }

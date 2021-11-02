@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { UserInfo } from 'src/app/headers/user-info.model';
 import { UserInfoService } from 'src/app/headers/user-info.service';
 import { DataBaseService } from '../database.service';
@@ -17,7 +17,7 @@ export class LoginComponent {
     
     
     this.infoService.modifyUserInfo(data).subscribe(data =>{
-      console.log("Updated Backenwadwdadwd Info");
+      console.log("Updated Backend Info");
       console.log(data);
     });
   }
