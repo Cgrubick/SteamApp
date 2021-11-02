@@ -18,7 +18,7 @@ export class LoginComponent {
     
     this.infoService.modifyUserInfo(data).subscribe(data =>{
       console.log("Updated Backend Info");
-      
+      console.log(data);
     });
   }
 
