@@ -2,34 +2,4 @@
         for now the data in this will just write new users to the DB -->
 
 
-<div class="fluid-container">
-    <div class="row-2">
-        
-        <div class="col-6">
-            <p></p>
-         </div>
-         
-        <div class="col-6">
-            <form #postForm="ngForm" (ngSubmit)="onEditUserInfo(postForm.value)" minLength>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
-                    <input type="text" class="form-control" id="userName" ngModel name="userName">
-                </div>
-                <div class="invalid-feedback">
-                    Please provide a valid Username. Usernames must have 5 or more characters
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
-                    <input type="text" class="form-control" id="password" ngModel name="password">
-                </div>
-                <div class="invalid-feedback">
-                    Please provide a valid password. Passwords must have 5 or more characters
-                </div>
-                <button class="btn btn-primary" type="submit">
-                    Create Account
-                </button>
-            </form>
-        </div>
-
-    </div>
-</div>
+<app-auth>Loading</app-auth>>
